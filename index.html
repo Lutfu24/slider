@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3bedad61df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+      background: rgba(0, 0, 0, 0.7) url(./2022-Honda-Civic-Touring-vs-2022-Hyundai-Elantra-Limited-vs-2022-Kia-Forte-GT-vs-2022-Mazda-Mazda3-Sedan-AWD-Turbo-vs-2022-Nissan-Sentra-SR-vs-2022-Volkswagen-Jetta-SEL-19.webp);
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+    .swiper {
+      width: 900px;
+     height: 560px;
+    }
+    .box {
+      width: 800px;
+      height: 400px;
+      margin-top: 60px;
+      border: 1px solid white;
+      display: flex;
+      color: white;
+      padding: 0 20px;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .box p{
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
+    .img--box {
+      transform: translateY(-40%);
+      width: 200px;
+      height: 150px;
+    }
+    .img--box img {
+      max-width: 200px;
+      border-radius: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper card">
+        <div class="swiper-slide">
+          <div class="box first">
+            <div class="img--box">
+              <img class="img" src="./customer-3.jpg" alt="" />
+            </div>
+            <h1>TYRELL</h1>
+            <p>
+              If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box second">
+            <div class="img--box">
+              <img class="img" src="./customer-4.jpg" alt="" />
+            </div>
+            <h1>WANDA</h1>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box third">
+            <div class="img--box">
+              <img class="img" src="./customer-0.jpg" alt="" />
+            </div>
+            <h1>JOHN</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              neque reprehenderit laborum, corporis explicabo assumenda. Porro
+              impedit consectetur animi, reprehenderit recusandae sapiente at
+              aliquam reiciendis modi ipsam rerum suscipit distinctio?
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box fourth">
+            <div class="img--box">
+              <img class="img" src="./customer-1.jpg" alt="" />
+            </div>
+            <h1>SANDY</h1>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box fifth">
+            <div class="img--box">
+              <img class="img" src="./customer-2.jpg" alt="" />
+            </div>
+            <h1>AMY</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
